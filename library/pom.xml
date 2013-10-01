@@ -20,13 +20,11 @@ Copyright 2012 Andreas Schildbach
 	<groupId>com.mobeta.android.dslv</groupId>
 	<artifactId>dslv-library</artifactId>
 	<packaging>apklib</packaging>
-	<version>0.6.1-VCNC-SNAPSHOT</version>
-
+	
 	<parent>
 		<groupId>com.mobeta.android.dslv</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.6.1-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<artifactId>dslv-parent</artifactId>
+		<version>0.6.1-VCNC-SNAPSHOT</version>
 	</parent>
 
 	<dependencies>
@@ -44,8 +42,6 @@ Copyright 2012 Andreas Schildbach
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<testSourceDirectory>test</testSourceDirectory>
-
 		<plugins>
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
