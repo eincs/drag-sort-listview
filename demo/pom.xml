@@ -6,7 +6,7 @@ Copyright 2012 Andreas Schildbach
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+	   http://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,24 +17,24 @@ Copyright 2012 Andreas Schildbach
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.mobeta.android.dslv</groupId>
-        <artifactId>parent</artifactId>
-        <version>0.6.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
+	<parent>
+		<groupId>com.mobeta.android.dslv</groupId>
+		<artifactId>dslv-parent</artifactId>
+		<version>0.6.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 
 	<groupId>com.mobeta.android.demodslv</groupId>
-	<artifactId>drag-sort-listview-demo</artifactId>
+	<artifactId>dslv-demo</artifactId>
 	<packaging>apk</packaging>
-	<version>0.6.1-SNAPSHOT</version>
+	<version>0.6.1-VCNC-SNAPSHOT</version>
 
 	<dependencies>
-        <dependency>
-            <groupId>com.mobeta.android.dslv</groupId>
-            <artifactId>drag-sort-listview</artifactId>
+		<dependency>
+			<groupId>com.mobeta.android.dslv</groupId>
+			<artifactId>dslv-library</artifactId>
 			<version>${project.version}</version>
-            <type>apklib</type>
+			<type>apklib</type>
 		</dependency>
 		<dependency>
 			<groupId>com.google.android</groupId>
@@ -56,10 +56,10 @@ Copyright 2012 Andreas Schildbach
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 				<artifactId>android-maven-plugin</artifactId>
 			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 </project>
